@@ -18,8 +18,24 @@ app.use(
 app.use(express.json());
 app.use(express.static(path.join(__dirname, "../public")));
 
-// load router
+const io = require("./socketio");
 
+io.on("connection", (socket) => {
+  console.log("client connected: ", socket.id);
+
+  socket.join(`wuat`);
+
+  socket.on("disconnect", (reason) => {
+    console.log(reason);
+  });
+});
+
+app.use((req, res, next) => {
+  req.io = io;
+  next();
+});
+
+// load router
 const router = require("./router");
 
 app.use(router);
