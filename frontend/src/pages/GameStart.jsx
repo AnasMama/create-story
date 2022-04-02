@@ -1,9 +1,21 @@
+import "../style/gamestart.css";
+
 function GameStart() {
   return (
-    <div>
-      <main>
-        <h2>Game start!</h2>
-      </main>
+    <div className="home">
+      <div className="container">
+        <div className="playerlist">
+          <div className="list">
+            <ul className="listp" />
+              <li />
+              <li />
+              <li />
+              <li />
+            
+          </div>
+        </div>
+        <div className="rules"></div>
+      </div>
     </div>
   );
 }

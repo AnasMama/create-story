@@ -6,11 +6,9 @@ import GameStart from "./pages/GameStart";
 import Home from "./pages/Home";
 import Turn from "./pages/Turn";
 
-
 function App() {
   return (
     <div className="App">
-      
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/game-start" element={<GameStart />} />
