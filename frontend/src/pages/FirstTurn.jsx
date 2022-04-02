@@ -1,4 +1,4 @@
-import "../style/FirstTurn.css";
+import "../style/Turn.css";
 
 function FirstTurn() {
   const onSubmit = (data) => console.log(data);
@@ -16,7 +16,7 @@ function FirstTurn() {
         <form onSubmit={onSubmit()}>
           <label htmlFor="answer">
             <h1>Brenda dit :</h1>
-            <input type="text" name="answer" />
+            <input type="text" name="answer" placeholder="Ecris ta réponse" />
           </label>
           <input type="submit" />
         </form>
