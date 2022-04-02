@@ -76,18 +76,18 @@ ENGINE = InnoDB;
 -- Table `sentence`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `sentence` (
-  `scenario_id` INT NOT NULL,
+  -- `scenario_id` INT NOT NULL,
   `player_id` INT NOT NULL,
   `round` INT NULL,
   `content` TEXT NULL,
-  PRIMARY KEY (`scenario_id`, `player_id`),
+  -- PRIMARY KEY (`scenario_id`, `player_id`),
   INDEX `fk_scenario_has_player_player1_idx` (`player_id` ASC) VISIBLE,
-  INDEX `fk_scenario_has_player_scenario1_idx` (`scenario_id` ASC) VISIBLE,
-  CONSTRAINT `fk_scenario_has_player_scenario1`
-    FOREIGN KEY (`scenario_id`)
-    REFERENCES `scenario` (`id`)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION,
+  -- INDEX `fk_scenario_has_player_scenario1_idx` (`scenario_id` ASC) VISIBLE,
+  -- CONSTRAINT `fk_scenario_has_player_scenario1`
+  --   FOREIGN KEY (`scenario_id`)
+  --   REFERENCES `scenario` (`id`)
+  --   ON DELETE NO ACTION
+  --   ON UPDATE NO ACTION,
   CONSTRAINT `fk_scenario_has_player_player1`
     FOREIGN KEY (`player_id`)
     REFERENCES `player` (`id`)

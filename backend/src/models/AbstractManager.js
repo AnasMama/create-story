@@ -14,6 +14,13 @@ class AbstractManager {
     return this.connection.query(`select * from  ${this.table}`);
   }
 
+  findAllSentences(game) {
+    return this.connection.query(
+      `select * from  ${this.table} where game_id = ?`,
+      [game]
+    );
+  }
+
   delete(id) {
     return this.connection.query(`delete from ${this.table} where id = ?`, [
       id,
