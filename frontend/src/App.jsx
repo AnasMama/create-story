@@ -12,8 +12,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/game-start" element={<GameStart />} />
-        <Route path="/first-turn" element={<FirstTurn />} />
-        <Route path="/turn" element={<Turn />} />
+        <Route path="/first-turn/:id" element={<FirstTurn />} />
+        <Route path="/turn/:id" element={<Turn />} />
         <Route path="/end-game" element={<EndGame />} />
       </Routes>
     </div>

@@ -22,7 +22,7 @@ function GameView({ url }) {
   }, [url]);
 
   return url && game ? (
-    <div>
+    <div style={{ width: "15rem", margin: "auto" }}>
       <h2>Lien de la partie: {url}</h2>
       <h1>Participants</h1>
       <h3>Créateur : {game.owner_nickname}</h3>
@@ -31,7 +31,7 @@ function GameView({ url }) {
           <li key={player.id}>{player.nickname}</li>
         ))}
       </ul>
-      <Link to="first-turn">
+      <Link to={`first-turn/${game.id}`}>
         <input type="button" value="Lancer" />
       </Link>
     </div>
