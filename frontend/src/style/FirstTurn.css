@@ -1,0 +1,30 @@
+.page {
+    background-color: var(--main-bg-color);
+    background-image: url("../assets/book-game.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;
+    height: 90vh;
+    width: 90%;
+    margin: auto;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.left-page {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.right-page {
+    display: flex;
+    flex-direction: column;
+}
+
+.profil-img {
+    display: flex;
+    gap: 2rem;
+}

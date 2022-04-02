@@ -9,7 +9,6 @@ import Turn from "./pages/Turn";
 function App() {
   return (
     <div className="App">
-      <h1>App</h1>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/game-start" element={<GameStart />} />

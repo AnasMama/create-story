@@ -1,9 +1,26 @@
+import "../style/FirstTurn.css";
+
 function FirstTurn() {
+  const onSubmit = (data) => console.log(data);
   return (
-    <div>
-      <main>
-        <h2>First turn !</h2>
-      </main>
+    <div className="page">
+      <div className="left-page">
+        <h1>gameTitle</h1>
+        <p>Un jour Brenda et Jack eurent une serieuse discution...</p>
+      </div>
+      <div className="right-page">
+        <div className="profil-img">
+          <img src="src/assets/Unknown.png" alt="Profil 1" className="profil" />
+          <img src="src/assets/Unknown.png" alt="Profil 1" className="profil" />
+        </div>
+        <form onSubmit={onSubmit()}>
+          <label htmlFor="answer">
+            <h1>Brenda dit :</h1>
+            <input type="text" name="answer" />
+          </label>
+          <input type="submit" />
+        </form>
+      </div>
     </div>
   );
 }
