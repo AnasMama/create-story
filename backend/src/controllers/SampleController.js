@@ -1,8 +1,8 @@
 const models = require("../models");
 
-class ItemController {
+class SampleController {
   static browse = (req, res) => {
-    models.item
+    models.sample
       .findAll()
       .then(([rows]) => {
         res.send(rows);
@@ -14,7 +14,7 @@ class ItemController {
   };
 
   static read = (req, res) => {
-    models.item
+    models.sample
       .find(req.params.id)
       .then(([rows]) => {
         if (rows[0] == null) {
@@ -30,14 +30,14 @@ class ItemController {
   };
 
   static edit = (req, res) => {
-    const item = req.body;
+    const sample = req.body;
 
     // TODO validations (length, format...)
 
-    item.id = parseInt(req.params.id, 10);
+    sample.id = parseInt(req.params.id, 10);
 
-    models.item
-      .update(item)
+    models.sample
+      .update(sample)
       .then(([result]) => {
         if (result.affectedRows === 0) {
           res.sendStatus(404);
@@ -52,14 +52,14 @@ class ItemController {
   };
 
   static add = (req, res) => {
-    const item = req.body;
+    const sample = req.body;
 
     // TODO validations (length, format...)
 
-    models.item
-      .insert(item)
+    models.sample
+      .insert(sample)
       .then(([result]) => {
-        res.status(201).send({ ...item, id: result.insertId });
+        res.status(201).send({ ...sample, id: result.insertId });
       })
       .catch((err) => {
         console.error(err);
@@ -68,7 +68,7 @@ class ItemController {
   };
 
   static delete = (req, res) => {
-    models.item
+    models.sample
       .delete(req.params.id)
       .then(() => {
         res.sendStatus(204);
@@ -80,4 +80,4 @@ class ItemController {
   };
 }
 
-module.exports = ItemController;
+module.exports = SampleController;
