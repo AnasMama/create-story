@@ -1,0 +1,11 @@
+.end-page {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.end-page ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}

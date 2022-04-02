@@ -1,3 +1,5 @@
+import "../style/Turn.css";
+
 function Turn() {
   const onSubmit = (data) => console.log(data);
   return (
