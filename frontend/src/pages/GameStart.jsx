@@ -18,7 +18,9 @@ function GameStart() {
               <hr className="ligne" />
               <li>Michel Tacos</li>
             </ul>
-            <button className="btn-start">Lancer la partie</button>
+            <button type="button" className="btn-start">
+              Lancer la partie
+            </button>
           </div>
         </div>
         <div className="rules">
