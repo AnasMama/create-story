@@ -1,21 +1,24 @@
-import "./style/home.css";
+import "../style/home.css";
 
 function Home() {
   return (
     <div className="home">
       <div className="container">
         <div className="title">
-          <h1>Je suis un titre je suis un titre je suis un titre </h1>
+          <h1>titre</h1>
         </div>
         <div className="new-game">
+          <p className="pseudo">Pseudo :</p>
           <input placeholder="Pseudo" />
           <button type="button" className="btn-newgame">
-            Nouvelle partie{" "}
+            Crée une nouvelle partie{" "}
           </button>
         </div>
         <div className="rejoin-game">
+          <p className="pseudo">Pseudo :</p>
           <input placeholder="Pseudo" />
-          <input placeholder="Url" />
+          <p className="pseudo1">Lien de la partie :</p>
+          <input placeholder="Lien" />
           <button type="button" className="btn-newgame">
             Rejoindre partie
           </button>
