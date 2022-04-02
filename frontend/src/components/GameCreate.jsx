@@ -23,14 +23,13 @@ function GameCreate({ url, setUrl }) {
   }
 
   return (
-    <div>
+    <div className="new-game">
       {url ? (
         ""
       ) : (
         <form className="TestComponent" onSubmit={handleSubmit}>
-          <h2>Create a game:</h2>
           <label htmlFor="nickname">
-            <span>Nickname: </span>
+            <span className="pseudo">Pseudo</span>
             <input
               type="text"
               name="nickname"
@@ -40,7 +39,11 @@ function GameCreate({ url, setUrl }) {
             />
           </label>
           <br />
-          <input type="submit" value="Create" />
+          <input
+            type="submit"
+            value="Créer une nouvelle partie"
+            className="btn-newgame"
+          />
         </form>
       )}
     </div>
