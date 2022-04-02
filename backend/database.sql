@@ -7,8 +7,8 @@ SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,N
 -- -----------------------------------------------------
 -- Schema wuat
 -- -----------------------------------------------------
-CREATE SCHEMA IF NOT EXISTS `wuat` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci ;
-USE `wuat` ;
+CREATE SCHEMA IF NOT EXISTS `create-story` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci ;
+USE `create-story` ;
 
 -- -----------------------------------------------------
 -- Table `player`
