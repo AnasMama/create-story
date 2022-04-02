@@ -2,8 +2,8 @@ import "../style/gamestart.css";
 
 function GameStart() {
   return (
-    <div className="home">
-      <div className="container">
+    <div className="gamestart">
+      <div className="container-start">
         <div className="playerlist">
           <div className="list">
             <h2 className="title-list">Liste des joueurs:</h2>

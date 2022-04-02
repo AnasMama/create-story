@@ -1,4 +1,4 @@
-.home{
+.gamestart{
     background-image: url('../assets/book-game.png');
     height:100vh;
     background-size: contain;
@@ -8,14 +8,18 @@
     justify-content: center ;
     align-items: center;
 }
-.container{
- 
+.container-start{
+    height: 70%;
+    width: 95%;
+    margin-left: 3rem;
     display: flex;
-    flex-direction: row;
+    align-items: center;
+    gap: 4rem;
+    font-family: 'pirate';
+    letter-spacing: 10px;
     
 }
 .playerlist{
-   
     width: 50%;
     height: 100%;
     display: flex;
