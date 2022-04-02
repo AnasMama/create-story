@@ -1,0 +1,74 @@
+@font-face {
+    font-family: "pirate";
+    src: url("../assets/Pieces_of_Eight.ttf");
+}
+@font-face {
+    font-family: "pirate2";
+    src: url("../assets/SomeWeatz_with_symbols.ttf");
+ }
+
+
+.home{
+    background-image: url('../assets/bg-home.png');
+    height:100vh;
+    background-size: contain;
+    display: flex;
+    justify-content: center ;
+    flex-direction: column;
+}
+.container{
+    height: 70%;
+    width: 95%;
+    margin-left: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+    font-family: 'pirate';
+    letter-spacing: 15px;
+
+}
+.title{
+    font-size: 2rem;
+    margin:0;
+    height: 4rem;
+    margin-bottom: 2rem;
+}
+.new-game{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 20%;
+}
+.rejoin-game{
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+    width: 20%;
+}
+.btn-newgame{
+    height: 1.5rem;
+    font-size: 1rem;
+    text-align: center;
+    border-radius: 15px;
+
+}
+input{
+    background:transparent;
+    border:1px solid black
+    
+}
+input::placeholder{
+    color:black
+}
+.pseudo{
+    margin:0;
+    font-size: 2rem;
+    align-self: baseline;
+}
+.pseudo1{
+    margin:0;
+    font-size: 2rem;
+    align-self: baseline;
+  
+}
