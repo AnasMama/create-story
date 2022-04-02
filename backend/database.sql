@@ -27,6 +27,7 @@ CREATE TABLE IF NOT EXISTS `game` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `owner_id` INT NOT NULL,
   `round` INT NULL,
+  `title` VARCHAR(255) NULL,
   `url` VARCHAR(255) NULL,
   PRIMARY KEY (`id`),
   INDEX `fk_game_player_idx` (`owner_id` ASC) VISIBLE)
