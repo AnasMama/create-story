@@ -27,35 +27,36 @@ function GameJoin({ url, setUrl }) {
   }
 
   return (
-    <div>
+    <div className="rejoin-game">
       {url ? (
         ""
       ) : (
         <form className="TestComponent" onSubmit={handleSubmit}>
-          <h2>Join a game:</h2>
+          <h2>Rejoindre une partie</h2>
           <label htmlFor="url">
-            <span>Url: </span>
             <input
               type="text"
               name="url"
               id="url"
+              placeholder="Pseudo"
               value={data.url}
               onChange={handleChange}
             />
           </label>
           <br />
           <label htmlFor="nickname">
-            <span>Nickname: </span>
+            <span className="pseudo">Pseudo</span>
             <input
               type="text"
               name="nickname"
               id="nickname"
+              placeholder="Lien"
               value={data.nickname}
               onChange={handleChange}
             />
           </label>
           <br />
-          <input type="submit" value="Join" />
+          <input type="submit" value="Rejoindre partie" />
         </form>
       )}
     </div>

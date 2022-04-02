@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 import axios from "axios";
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import { io } from "socket.io-client";
 
 function GameView({ url }) {
@@ -22,13 +23,17 @@ function GameView({ url }) {
 
   return url && game ? (
     <div>
-      <h2>Game: {url}</h2>
-      <h3>Owner: {game.owner_nickname}</h3>
+      <h2>Lien de la partie: {url}</h2>
+      <h1>Participants</h1>
+      <h3>Créateur : {game.owner_nickname}</h3>
       <ul>
         {players.map((player) => (
           <li key={player.id}>{player.nickname}</li>
         ))}
       </ul>
+      <Link to="first-turn">
+        <input type="button" value="Lancer" />
+      </Link>
     </div>
   ) : (
     ""
