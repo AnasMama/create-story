@@ -5,8 +5,16 @@ function EndGame() {
   return (
     <div className="page">
       <div className="left-page">
-        <h1>gameTitle</h1>
-        <p>Un jour Brenda et Jack eurent une serieuse discution...</p>
+        <h1 className="gametitle">
+          Il était une fois dans un pays fort, fort lointain...
+        </h1>
+        <p className="first-phrase">
+          Un jour Brenda et Jack eurent une serieuse discussion...
+        </p>
+        <p className="first-phrase">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
+          deleniti, laborum distinctio voluptatum et
+        </p>
       </div>
       <div className="right-page">
         <div className="end-page">
