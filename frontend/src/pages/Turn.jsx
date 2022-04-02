@@ -5,7 +5,7 @@ function Turn() {
   return (
     <div className="page">
       <div className="left-page">
-        <img src="src/assets/Unknown.png" alt="Profil 1" className="profil" />
+        <img src="src/assets/output-onlinepngtools.png" alt="Profil 1" className="profil" />
         <h1>Brenda dit :</h1>
         <p>phrase précédente</p>
       </div>
